@@ -1,6 +1,15 @@
 import './App.css';
 import React, { Component } from 'react'
 
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Afro Pixel</h1>
+      <h2>Base code Heroku Update ..</h2>
+    </div>
+  );
+  
 class App extends Component {
   render(){
     return (
@@ -146,6 +155,7 @@ class App extends Component {
       </div>
     );
   }
+ 
 }
 
 export default App;
