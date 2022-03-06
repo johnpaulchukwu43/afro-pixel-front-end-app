@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Login.css";
 
 class Login extends Component {
   render() {
@@ -20,12 +21,12 @@ class Login extends Component {
                   <div className="form-floating mb-2">
                     <input
                       ref={(input) => (this.email = input)}
-                      type="email"
+                      type="text"
                       placeholder="name@example.com"
                       id="floatingInput"
                       className="form-control"
                     />
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput">Username</label>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -52,11 +53,12 @@ class Login extends Component {
                 <label
                   className="form-check-label"
                   for="flexCheckDefault"
-                  style={{ color: "white" }}
+                  style={{ color: "white", textAlign: "left !important" }}
                 >
                   Accept our Terms and Condition
                 </label>
               </div>
+              <br />
               <br />
               <button
                 type="button"
@@ -67,32 +69,36 @@ class Login extends Component {
                   backgroundColor: "white",
                   color: "#AE002B",
                   borderColor: "white",
+                  width: "65%",
                 }}
               >
                 Sign In
               </button>
             </form>
             <br />
-            <br />
-            <br />
-            <p style={{ color: "white", float: "left" }} className="mb-4">
+
+            <p style={{ color: "white" }} class="signuptext">
               Or SignUp With
             </p>
+            <div class="icon-flex-gap">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a>
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </div>
             <br />
             <br />
-            <p style={{ color: "white", float: "left" }} className="mb-4">
-              <i className="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;
-              <i className="fab fa-google"></i>&nbsp;&nbsp;&nbsp;
-              <i className="fab fa-twitter"></i>
-            </p>
-            <br />
-            <br />
-            <p style={{ color: "white", float: "left" }}>
+            <p style={{ color: "white" }}>
               Don't have an account?{" "}
               <Link
                 to="/signup"
                 style={{
-                  textDecoration: "underline",
+                  textDecoration: "none",
                   color: "white",
                 }}
               >
@@ -109,7 +115,7 @@ class Login extends Component {
             </p>
           </div>
           <div
-            className="col-md-6 bg-dark banner1"
+            className="col-md-6 bg-dark banner2"
             // style={{
             //   backgroundImage:
             //     "url('img/eberhard-grossgasteiger-C6nO21vYw0E-unsplash.jpg')",

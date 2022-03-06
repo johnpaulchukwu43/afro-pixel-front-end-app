@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./SignUp.css";
 
 class SignUp extends Component {
   render() {
@@ -94,51 +95,43 @@ class SignUp extends Component {
                   backgroundColor: "white",
                   color: "#AE002B",
                   borderColor: "white",
-                  float: "left",
+                  width: "65%",
                 }}
               >
                 SIGN UP
               </button>
             </form>
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p style={{ color: "white", float: "left" }} className="mb-4">
+            <p style={{ color: "white" }} class="signuptext">
               Or SignUp With
             </p>
+            <div class="icon-flex-gap">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a>
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </div>
             <br />
             <br />
-            <p style={{ color: "white", float: "left" }} className="mb-4">
-              <i className="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;
-              <i className="fab fa-google"></i>&nbsp;&nbsp;&nbsp;
-              <i className="fab fa-twitter"></i>
-            </p>
-            <br />
-            <br />
-            <p style={{ color: "white", float: "left" }}>
-              Don't have an account?{" "}
+            <p style={{ color: "white" }}>
+              Already have an account?{" "}
               <a
                 href="login.html"
                 style={{
-                  textDecoration: "underline",
+                  textDecoration: "none",
                   color: "white",
                 }}
               >
-                Create an account
+                Sign In
               </a>
             </p>
           </div>
-          <div
-            className="col-md-6 bg-dark banner1"
-            style={{
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              padding: "80px",
-            }}
-          ></div>
+          <div className="col-md-6 bg-dark banner2"></div>
         </div>
       </div>
     );
