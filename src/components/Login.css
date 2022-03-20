@@ -1,0 +1,47 @@
+.form-floating > input {
+  background-color: transparent !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid white !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+.form-check {
+  text-align: left;
+}
+
+.icon-flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  font-size: 1.4rem;
+  color: white;
+}
+.icon-flex-gap > a {
+  text-decoration: none !important;
+  color: white;
+}
+.signuptext {
+  margin-bottom: 1% !important;
+}
+
+.form-floating > input:focus {
+  box-shadow: none !important;
+  /* border: 0 !important; */
+}
+
+.form-floating > label {
+  color: white !important;
+}
+
+input:focus > label {
+  color: red !important;
+}
+
+@media screen and (max-width: 425px) {
+  .image_col {
+    display: none;
+  }
+}

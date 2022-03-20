@@ -1,0 +1,21 @@
+.icon-flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  font-size: 1.4rem;
+  color: white;
+}
+.icon-flex-gap > a {
+  text-decoration: none !important;
+  color: white;
+}
+.signuptext {
+  margin-bottom: 1% !important;
+}
+
+@media screen and (max-width: 425px) {
+  .image_col {
+    display: none;
+  }
+}
+
