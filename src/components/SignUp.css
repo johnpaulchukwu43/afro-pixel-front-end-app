@@ -12,3 +12,10 @@
 .signuptext {
   margin-bottom: 1% !important;
 }
+
+@media screen and (max-width: 425px) {
+  .image_col {
+    display: none;
+  }
+}
+

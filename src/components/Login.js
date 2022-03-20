@@ -115,7 +115,7 @@ class Login extends Component {
             </p>
           </div>
           <div
-            className="col-md-6 bg-dark banner2"
+            className="col-md-6 bg-dark banner2 image_col"
             // style={{
             //   backgroundImage:
             //     "url('img/eberhard-grossgasteiger-C6nO21vYw0E-unsplash.jpg')",

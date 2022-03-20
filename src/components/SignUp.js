@@ -131,7 +131,7 @@ class SignUp extends Component {
               </a>
             </p>
           </div>
-          <div className="col-md-6 bg-dark banner2"></div>
+          <div className="col-md-6 bg-dark banner2 image_col"></div>
         </div>
       </div>
     );
